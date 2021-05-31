@@ -14,15 +14,6 @@ public class BallSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Vector3 posMouse = Input.mousePosition;
-        //    Vector3 nuevaPos = Camera.main.ScreenToWorldPoint(posMouse);
-        //    GameObject ball = Resources.Load<GameObject>(ubicacionPrefabs + "DefKitSoftbody");
-
-        //    ball.transform.position = nuevaPos;
-        //    Instantiate(ball);
-        //}
         if (Input.GetMouseButtonDown(0))
         {
             Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -35,9 +26,9 @@ public class BallSpawner : MonoBehaviour
                 Vector3 hitpoint = rayHit.point;
                 hitpoint.y += 2;
                 hitpoint.z -= 0.5f;
-                Instantiate(ball);
                 ball.transform.position = hitpoint;
-                
+                Instantiate(ball);
+
             }
         }
         if (Input.GetMouseButtonDown(1))
@@ -52,8 +43,8 @@ public class BallSpawner : MonoBehaviour
                 Vector3 hitpoint = rayHit.point;
                 hitpoint.y += 2;
                 hitpoint.z -= 0.5f;
-                Instantiate(ball);
                 ball.transform.position = hitpoint;
+                Instantiate(ball);
 
             }
         }
