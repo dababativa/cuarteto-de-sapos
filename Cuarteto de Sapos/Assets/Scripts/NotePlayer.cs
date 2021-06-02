@@ -38,6 +38,21 @@ public class NotePlayer : MonoBehaviour
             case "B":
                 audioClip = Resources.Load<AudioClip>(ubicacionAudio + "B3");
                 break;
+            case "KB":
+                audioClip = Resources.Load<AudioClip>(ubicacionAudio + "KB");
+                break;
+            case "KC":
+                audioClip = Resources.Load<AudioClip>(ubicacionAudio + "KC");
+                break;
+            case "KE":
+                audioClip = Resources.Load<AudioClip>(ubicacionAudio + "KE");
+                break;
+            case "KF":
+                audioClip = Resources.Load<AudioClip>(ubicacionAudio + "KF");
+                break;
+            case "KG":
+                audioClip = Resources.Load<AudioClip>(ubicacionAudio + "KG");
+                break;
         }
         audioSource.clip = audioClip;
 
